@@ -2,19 +2,11 @@
 
 class Program
 {
-    public delegate void VoidDel();
-
-    public static event VoidDel voidDel;
+ 
     static void Main(string[] args)
     {
-        HealthDel += delegate()
-        {
+        Tester tester = new();
+        tester.Run();
 
-        };
-        voidDel += delegate()
-        {
-            Console.WriteLine("dwwf");
-        };
-        
     }
 }

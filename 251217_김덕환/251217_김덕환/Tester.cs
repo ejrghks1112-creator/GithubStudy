@@ -4,21 +4,18 @@ public class Tester
 {
     public void Run()
     {
-        Player player = new();
-        GameUI ui = new(player);
+        int a = 10;
 
-        Console.Clear();
-        ui.PrintHealthUI(player.Health);
+        Console.WriteLine(a.IsEven());
         
-        while (true)
-        {
-            ConsoleKey input = Console.ReadKey(true).Key;
+    }
+}
 
-            if (input == ConsoleKey.W)
-            {
-                player.TakeDamage(1);
-            }
-        }
+public static class Extension
+{
+    public static bool IsEven(this int value)
+    {
+        return value % 2 == 0;
     }
 }
 
