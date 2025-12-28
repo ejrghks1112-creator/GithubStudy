@@ -4,10 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        TesterStruct ts1 = new TesterStruct();
-        TesterStruct ts2 = ts1;
-        ts2.value = 5;
-        Console.WriteLine(ts1.value);
-        Console.WriteLine(ts2.value);
+        Tester tester = new();
+        tester.Run();
+        Console.WriteLine(Static.value);
     } 
 }

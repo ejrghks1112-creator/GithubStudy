@@ -2,5 +2,8 @@
 
 public class Tester
 {
-    public int value = 10;
+   public void Run()
+   {
+      Console.WriteLine(Static.value);
+   }
 }
