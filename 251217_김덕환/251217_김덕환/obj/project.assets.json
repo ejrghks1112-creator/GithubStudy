@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user-pc\\RiderProjects\\251217_김덕환\\251217_김덕환\\251217_김덕환.csproj",
+      "projectUniqueName": "C:\\Users\\user-pc\\Documents\\GitHub\\GithubStudy\\251217_김덕환\\251217_김덕환\\251217_김덕환.csproj",
       "projectName": "251217_김덕환",
-      "projectPath": "C:\\Users\\user-pc\\RiderProjects\\251217_김덕환\\251217_김덕환\\251217_김덕환.csproj",
+      "projectPath": "C:\\Users\\user-pc\\Documents\\GitHub\\GithubStudy\\251217_김덕환\\251217_김덕환\\251217_김덕환.csproj",
       "packagesPath": "C:\\Users\\user-pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user-pc\\RiderProjects\\251217_김덕환\\251217_김덕환\\obj\\",
+      "outputPath": "C:\\Users\\user-pc\\Documents\\GitHub\\GithubStudy\\251217_김덕환\\251217_김덕환\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
