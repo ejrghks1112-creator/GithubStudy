@@ -4,34 +4,71 @@ public class Tester
 {
     public void Run()
     {
+        Player player = new();
+        GameUI ui = new(player);
+
+        Console.Clear();
+        ui.PrintHealthUI(player.Health);
         
+        while (true)
+        {
+            ConsoleKey input = Console.ReadKey(true).Key;
+
+            if (input == ConsoleKey.W)
+            {
+                player.TakeDamage(1);
+            }
+        }
     }
 }
 
-public interface IInteractable
+public class Player
 {
-    public void Interact();
-}
+    private int _health = 100;
 
-public interface IBreakable
-{
-    public void Break();
-}
-public class Item
-{
+    public delegate void HealthDel(int _health);
+
+    public HealthDel OnHealthChanged;
+    
+
+    public int Health
+    {
+        get
+        {
+            return _health;
+        }
+        set
+        {
+            _health = value;
+            OnHealthChanged?.Invoke(_health);
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        Health -= damage;
+    }
     
 }
 
-public class Chair : Item, IInteractable,IBreakable
+public class GameUI
 {
-    public void Interact()
+    private Player _player;
+
+    public GameUI(Player player)
     {
-        Console.WriteLine("앉기");
+        _player.OnHealthChanged += PrintHealthUI;
+        // _player.OnHealthChanged += PrintPopUp;
+    }
+    
+    public void PrintHealthUI(int health)
+    {
+        Console.WriteLine($"플레이어의 현재 체력 : {health}");
     }
 
-    public void Break()
+    public void PrintPopUp()
     {
-        Console.WriteLine("깨짐");
+        Console.WriteLine("1뎀지");
     }
 }
  
