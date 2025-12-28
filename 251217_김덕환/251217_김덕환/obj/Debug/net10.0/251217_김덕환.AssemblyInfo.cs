@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("251217_김덕환")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a89d5a0d955cfef1d3d8693aaefcaaf4569dadec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a47720783710b9870fe2efc906f2223f19f7f8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("251217_김덕환")]
 [assembly: System.Reflection.AssemblyTitleAttribute("251217_김덕환")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
