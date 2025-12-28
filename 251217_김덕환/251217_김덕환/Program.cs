@@ -6,6 +6,5 @@ class Program
     {
         Tester tester = new();
         tester.Run();
-        Console.WriteLine(Static.value);
     } 
 }
