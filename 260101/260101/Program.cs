@@ -5,8 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Study3 study3 = new();
-        Console.WriteLine(study3.solution(10));
-
+        Console.WriteLine(study3.solution(3));
         
     }
 }
