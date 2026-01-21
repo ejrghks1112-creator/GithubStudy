@@ -4,19 +4,51 @@ class Program
 {
     static void Main(string[] args)
     {
-        int[,] maps = new int[n.m];
+        int n = 5;
+        int m = 5;
+        int[,] maps = new int[n,m];
+
+        bool a = false;
+        maps[1, 2] = 0;
+        maps[2, 2] = 0;
+        maps[2, 4] = 0;
+        maps[3, 2] = 0;
+        maps[5, 2] = 0;
+        maps[5, 1] = 0;
+        maps[5, 3] = 0;
+        maps[5, 4] = 0;
+        maps[4, 4] = 0;
+
+        for (int i = 0; i < maps.GetLength(0); i++)
+        {
+            for (int j = 0; j < maps.GetLength(1); j++)
+            {
+                if (maps[i, j] != 0)
+                {
+                    maps[i, j] = 1;
+
+                    if (maps[i, j] == 1)
+                    {
+                        a = true;
+                    }
+                    
+                }
+            }
+        }
     }
 
     public List<int> BFS(int start)
     {
+
+        
         int n = 5;
         int m = 5;
         
         List<(int,int)> path = new();
         Queue<(int,int)> queue = new Queue<(int,int)>();
 
-        bool[,] visited = new bool [n,m];
-        visited[1,1] = true;
+        bool[] visited = new bool [a];
+        visited[a] = true;
         queue.Enqueue((1, 1));
 
         while (queue.Count > 0)
@@ -26,7 +58,10 @@ class Program
 
             for (int i = 0; i < n - 1; i++)
             {
-                if(maps[n,i] && !visited[i])
+                if (maps[n, i] && !visited[i])
+                {
+                    
+                }
             }
         }
 
