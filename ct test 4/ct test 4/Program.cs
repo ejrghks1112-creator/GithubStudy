@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        ct_1 ct = new ct_1();
+        ct_3 ct = new ct_3();
         ct.Solution();
     }
 }
