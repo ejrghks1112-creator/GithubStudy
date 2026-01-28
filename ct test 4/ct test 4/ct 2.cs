@@ -20,8 +20,8 @@ public class ct_2
 
     public bool isSosu(int n)
     {
-        int sr = (int)Math.Sqrt(n);
-        for (int i = 2; i < sr + 1; i++)
+        int a = (int)Math.Sqrt(n);
+        for (int i = 2; i < a + 1; i++)
         {
             if (n % i == 0) return false;
         }
