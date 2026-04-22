@@ -36,6 +36,11 @@ public class PlayerController : NetworkBehaviour
         {
             _anim.SetFloat("Move",0);
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GetComponent<NetworkObject>().Despawn(true);
+        }
     }
     
 }
