@@ -100,5 +100,37 @@ InitTestScene*.unity*
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 
+# Firebase configuration files
+# 프로젝트 구성 및 설정 파일
+.firebase/
+firebasesrc
+
+# Firebase SDK configuration (Sensitive data)
+# 앱의 API 키와 설정이 담긴 파일 (클라이언트 측 파일은 상황에 따라 포함하기도 하지만, 보안상 제외를 권장)
+firebase.json
+database-rules.json
+firestore.rules
+firestore.indexes.json
+storage.rules
+
+# Firebase Debug logs
+# 디버그 및 로그 파일
+firebase-debug.log
+ui-debug.log
+firestore-debug.log
+pubsub-debug.log
+
+# Firebase Hosting preview/deployments
+# 호스팅 관련 임시 파일
+.runtimeconfig.json
+
+# Functions dependencies
+# Cloud Functions 사용 시 노드 모듈 및 빌드 결과물
+functions/node_modules/
+functions/lib/
+functions/npm-debug.log
+
 # Ignore imported assets
 Assets/Imports/**
+Assets/Firebase/**
+Assets/StreamingAssets/**
